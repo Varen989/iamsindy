@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none; /* ซ่อน cursor ปกติ */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background: #ff66cc;
+  border: none;
+  padding: 20px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+button:hover {
+  background: #ff3399;
+  box-shadow: 0 0 25px #ff3399;
+}
+
+.hidden { display: none; }
+
+#main-page {
+  background: url('freedom.png') center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-center h1 {
+  font-size: 50px;
+  text-shadow: 0 0 20px #ff99ff;
+}
+
+.text-center h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #ffccff;
+}
+
+.text-center p {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #ffd6ff;
+}
+
+.icon-box {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icon-box img {
+  width: 60px;
+  transition: 0.3s;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+.icon-box img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #7289da);
+}
+
+.ig-icon {
+  width: 55px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.ig-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #ff66cc);
+}
+
+.trail {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: #ff66cc;
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff3399;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s linear;
+}
